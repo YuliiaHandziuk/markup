@@ -1,0 +1,90 @@
+[id="header"] {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding: 34px 0 0;
+    margin: 0 auto;
+
+    .container-wrap {
+        max-width: 1316px;
+        padding: 0; 
+
+        @include media(">widescreen") {
+            max-width: 1440px;
+
+            a {
+                font-size: 16px;
+            }
+        }
+
+        @include media("<widescreen") {
+            max-width: 1024px;
+        }
+
+        @include media(">desktop") {
+            max-width: 996px;
+        }
+
+        @include media("<desktop") {
+            max-width: 768px;
+        }
+
+        @include media("<tablet") {
+            max-width: 460px;
+        }
+    }
+
+    .logo {
+        display: inline-block;
+        padding: 2px 0 0 4px;
+
+        @include media("<desktop") {
+            img {
+                max-width: 75%;
+            }
+        }
+    }
+
+    .nav-holder {
+        line-height: 70px;
+        float: right;
+
+        @include media("<desktop") {
+            height: 50px;
+            a {
+                font-size: 12px;
+            }
+        }
+    }
+
+    .nav-holder li {
+        display: inline-block;
+        margin-left: 16px;
+
+    }
+
+    .nav-slide {
+        padding: 0 16px 0 0;
+    
+        li {
+            padding: 0 9px 0 0;
+        
+            a {
+                color: $white;
+                letter-spacing: 0.3px;
+            }
+        }
+    }    
+}
+
+.nav-scroll {
+    padding: 0;
+    background-color: rgba($black, 0.5);
+    color: $white;
+
+    .logo {
+        padding: 10px 0 0 4px;
+    }
+}

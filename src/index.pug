@@ -1,0 +1,352 @@
+extends pug/extends/master
+
+block content
+	#content
+		.visual-block(style="background-image: url(images/header_bgrd.jpg)")
+			.container-wrap
+				.visual-block__title
+					em.title We are best and creative agency
+					h1 We turn creative ideas into your business.
+					p Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.
+					.visual-block__buttons
+						a(href="#").btn-pink.btn.visual-block__btn Our Story
+						a(href="#").btn-violet.btn.visual-block__btn Read More
+					img(src="images/photo_1.png" alt="person")
+		.section__about-us(style="background-image: url(images/world_map_bgrd.jpg)")
+			.container-wrap
+				.section__about-us--block
+					em.title Dream Big Inspire the World
+					h2 We turn creative ideas into your business.
+					nav.nav
+						ul
+							li
+								a(href="#") Web design
+							li
+								a(href="#") Mobile App
+							li
+								a(href="#") Branding
+							li
+								a(href="#") Branding
+					.text-block
+						p Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.Lorem ipsum dolor sit am et, consec tetur adipi scing elit. 
+						a(href="#").btn-pink.btn__read_more.btn Read More
+					img(src="images/watch.png", alt="watch")
+		.section__features(style="background-color: #4b2d7f")
+			.container-wrap
+				.section__features--block
+					img(src="images/headphone.svg", alt="megaphone")
+					span.count 500+
+					p Successfully 
+						span completed projects
+					.text-block
+						p Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.
+				.section__features--block
+					img(src="images/headphone.svg", alt="megaphone")
+					span.count 254+
+					p Highly specialised
+						span employees
+					.text-block
+						p Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.
+				.section__features--block
+					img(src="images/headphone.svg", alt="megaphone")
+					span.count 45+
+					p Awards
+						span  around the world
+					.text-block
+						p Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.
+		.section__suggest(style="background-image: url(images/monitor_bgrd.jpg)")
+			.container-wrap
+				em.title Let's Grow Together
+				h2 We turn creative ideas into your business.
+				.text-block 
+					p Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit. 
+					a(href="#").btn-pink.btn__read_more.btn Read More
+		.section__products(style="background-color: #ffffff")
+			.container-wrap
+				.section__products--block
+					em.title We are best and creative agency
+					h2 We turn creative ideas into your business.
+					.text-block
+						p Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.
+					.container-products
+						.product-block
+							img(src="images/message.png", alt="message")
+							span.title-text Graphic Design
+							.text-block
+								p  Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.
+							a(href="#").btn-pink.btn__read_more.btn Read More
+						.product-block
+							img(src="images/megaphone.png", alt="megaphone")
+							span.title-text Graphic Design
+							.text-block
+								p Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.
+							a(href="#").btn-pink.btn__read_more.btn Read More
+				.section__products--video
+					img(src="images/video-photo.jpg", alt="video_title").video-cover
+					a(href="#").btn__video 
+						img(src="images/video-btn.svg", alt="video-button")
+		.section__reviews(style="background-color: #f1f1f1")
+			.container-wrap
+				.section__reviews--title
+					h2 Our Recent Work
+					p Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.Lorem ipsum dolor sit am et, consec tetur adipi scing elit. 
+				.section__reviews--tabs
+					ul.tabset
+						li
+							a(href="#tab1-0") Web design
+						li
+							a(href="#tab2-0") Mobile App
+						li
+							a(href="#tab3-0") Branding
+						li
+							a(href="#tab4-0") Branding
+					.tab-content
+						#tab1-0
+							.container-image
+								.image-block
+									a(href="#") 
+										img(src="images/photo_1.jpg" alt="photo-product")  
+								.image-block
+									a(href="#") 
+										img(src="images/photo_2.jpg" alt="photo-product")
+								.image-block
+									a(href="#") 
+										img(src="images/photo_3.jpg" alt="photo-product")
+								.image-block
+									a(href="#") 
+										img(src="images/photo_4.jpg" alt="photo-product")
+								.image-block
+									a(href="#") 
+										img(src="images/photo_5.jpg" alt="photo-product")
+								.image-block
+									a(href="#") 
+										img(src="images/photo_6.jpg" alt="photo-product")
+								.image-block
+									a(href="#") 
+										img(src="images/photo_7.jpg" alt="photo-product")
+								.image-block
+									a(href="#") 
+										img(src="images/photo_8.jpg" alt="photo-product")
+								.image-block
+									a(href="#") 
+										img(src="images/photo_9.jpg" alt="photo-product")
+						#tab2-0.js-tab-hidden
+							.container-image
+								.image-block
+									a(href="#") 
+										img(src="images/photo_1.jpg" alt="photo-product")
+								.image-block
+									a(href="#") 
+										img(src="images/photo_2.jpg" alt="photo-product")
+								.image-block
+									a(href="#") 
+										img(src="images/photo_3.jpg" alt="photo-product")
+								.image-block
+									a(href="#") 
+										img(src="images/photo_4.jpg" alt="photo-product")
+								.image-block
+									a(href="#") 
+										img(src="images/photo_5.jpg" alt="photo-product")
+								.image-block
+									a(href="#") 
+										img(src="images/photo_6.jpg" alt="photo-product")
+								.image-block
+									a(href="#") 
+										img(src="images/photo_7.jpg" alt="photo-product")
+								.image-block
+									a(href="#") 
+										img(src="images/photo_8.jpg" alt="photo-product")
+								.image-block
+									a(href="#") 
+										img(src="images/photo_9.jpg" alt="photo-product")
+						#tab3-0.js-tab-hidden
+							.container-image
+								.image-block
+									a(href="#") 
+										img(src="images/photo_1.jpg" alt="photo-product")
+								.image-block
+									a(href="#") 
+										img(src="images/photo_2.jpg" alt="photo-product")
+								.image-block
+									a(href="#") 
+										img(src="images/photo_3.jpg" alt="photo-product")
+								.image-block
+									a(href="#") 
+										img(src="images/photo_4.jpg" alt="photo-product")
+								.image-block
+									a(href="#") 
+										img(src="images/photo_5.jpg" alt="photo-product")
+								.image-block
+									a(href="#") 
+										img(src="images/photo_6.jpg" alt="photo-product")
+								.image-block
+									a(href="#") 
+										img(src="images/photo_7.jpg" alt="photo-product")
+								.image-block
+									a(href="#") 
+										img(src="images/photo_8.jpg" alt="photo-product")
+								.image-block
+									a(href="#") 
+										img(src="images/photo_9.jpg" alt="photo-product")
+						#tab4-0.js-tab-hidden
+							.container-image
+								.image-block
+									a(href="#") 
+										img(src="images/photo_1.jpg" alt="photo-product")
+								.image-block
+									a(href="#") 
+										img(src="images/photo_2.jpg" alt="photo-product")
+								.image-block
+									a(href="#") 
+										img(src="images/photo_3.jpg" alt="photo-product")
+								.image-block
+									a(href="#") 
+										img(src="images/photo_4.jpg" alt="photo-product")
+								.image-block
+									a(href="#") 
+										img(src="images/photo_5.jpg" alt="photo-product")
+								.image-block
+									a(href="#") 
+										img(src="images/photo_6.jpg" alt="photo-product")
+								.image-block
+									a(href="#") 
+										img(src="images/photo_7.jpg" alt="photo-product")
+								.image-block
+									a(href="#") 
+										img(src="images/photo_8.jpg" alt="photo-product")
+								.image-block
+									a(href="#") 
+										img(src="images/photo_9.jpg" alt="photo-product")
+				.section__reviews--button
+					a(href="#").btn-pink.btn__read_more.btn Read More
+		.section__partners(style="background-color: #4b2d7f")
+			.container-wrap
+				.container-partners
+					.partner-block 
+						a(href="#")
+							img(src="images/cisco.png" alt="cisco-logo")
+					.partner-block 
+						a(href="#")
+							img(src="images/adidas.png" alt="partner-logo")
+					.partner-block 
+						a(href="#")
+							img(src="images/lenovo.png" alt="partner-logo")
+					.partner-block 
+						a(href="#")
+							img(src="images/disney.png" alt="partner-logo")
+					.partner-block 
+						a(href="#")
+							img(src="images/amazon.png" alt="partner-logo")
+					.partner-block 
+						a(href="#")
+							img(src="images/puma.png" alt="partner-logo")
+					.partner-block 
+						a(href="#")
+							img(src="images/apple.png" alt="partner-logo")
+					.partner-block 
+						a(href="#")
+							img(src="images/mini.png" alt="partner-logo")
+		.section__quote(style="background-image: url(images/quote-bg.jpg)")
+			.container-wrap
+				.section__quote--title
+					em.title Our Happy Client
+					h2 Testimonials
+				blockquote(cite="#") 
+					q Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit.
+				cite Mr. John Doe
+				img(src="images/client.png" alt="client").client-photo
+		.section__callback(style="background-image: url(images/callback_bg.jpg)")
+			.container-wrap
+				.section__callback--title
+					h2 Need Help?
+					h4 Don't Forget to Contact With Us
+					.text-block
+						p Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus.
+				.section__callback--form
+					input(type="text", placeholder="Name")
+					input(type="email", placeholder="Email")
+					button(type="submit").btn.btn-violet.btn-form submit
+		.section__socials(style="background-color: #4b2d7f")
+			.container-wrap
+				ul
+					li
+						a(href="#") facebook
+					li
+						a(href="#") twitter
+					li
+						a(href="#") linkedin
+					li
+						a(href="#") instagram
+					li
+						a(href="#") behance
+		.section__navigation(style="background-image: url(images/world_map_bgrd.jpg)")
+			.container-wrap
+				.section__navigation--sitemap 
+					.list-block
+						span.title Company
+						ul
+							li
+								a(href="#") About
+							li
+								a(href="#") Approach
+							li
+								a(href="#") Sustainability
+							li
+								a(href="#") Careers
+							li
+								a(href="#") News
+					.list-block
+						span.title Company
+						ul
+							li
+								a(href="#") About
+							li
+								a(href="#") Approach
+							li
+								a(href="#") Sustainability
+							li
+								a(href="#") Careers
+							li
+								a(href="#") News
+					.list-block
+						span.title Company
+						ul
+							li
+								a(href="#") About
+							li
+								a(href="#") Approach
+							li
+								a(href="#") Sustainability
+							li
+								a(href="#") Careers
+							li
+								a(href="#") News
+					.list-block
+						span.title Company
+						ul
+							li
+								a(href="#") About
+							li
+								a(href="#") Approach
+							li
+								a(href="#") Sustainability
+							li
+								a(href="#") Careers
+							li
+								a(href="#") News
+				.section__navigation--gallery
+						.photo-block
+							img(src="images/image_1.png" alt="gallery-photo")
+						.photo-block
+							img(src="images/image_2.png" alt="gallery-photo")
+						.photo-block
+							img(src="images/image_3.png" alt="gallery-photo")
+						.photo-block
+							img(src="images/image_4.png" alt="gallery-photo")
+							
+
+					
+
+
+
+
