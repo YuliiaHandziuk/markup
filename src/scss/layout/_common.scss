@@ -2,7 +2,6 @@
 	overflow: hidden;
 	width: 100%;
 	position: relative;
-	// max-width: $max-container-width;
 }
 
 .container-wrap {
@@ -22,8 +21,7 @@
 	padding: 226px 0px 208px 70px;
 
 	.container-wrap {
-		max-width: 1135px;
-		margin: 0 auto;
+		max-width: $max-content-width;
 		padding: 0;
 	}
 
@@ -31,7 +29,7 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
-		width: 56%;
+		width: 55%;
 		
 		h1 {
 			color: $white;
@@ -40,10 +38,9 @@
 			letter-spacing: -1.3px;
 		}
 
-		em.title {
+		.title {
 			color: $white;
-			font-style: italic;
-			font-family: Palatino;
+			font-family: $base-font-italic;
 			font-size: 35px;
 			letter-spacing: -0.4px;
 			margin: 0 0 7px;
@@ -62,7 +59,7 @@
 
 	.visual-block__buttons {
 		display: inline-block;
-		margin-left: 48px;
+		margin: 0 0 0 48px;
 
 		a:first-child {
 			line-height: 0.9;
