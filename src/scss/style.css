@@ -853,7 +853,7 @@ input[type='submit'] {
 }
 
 .nav-opener {
-  display: block;
+  display: none;
   cursor: pointer;
   height: 26px;
   width: 26px;
@@ -890,6 +890,7 @@ input[type='submit'] {
 
 @media (max-width: 767px) {
   .nav-opener {
+    display: block;
     top: 40px;
   }
 }
@@ -1818,7 +1819,7 @@ input[type='submit'] {
 
 @media (max-width: 1023px) {
   .section__products .container-wrap .section__products--block em.title {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 
@@ -1920,12 +1921,12 @@ input[type='submit'] {
 
 .section__products .container-wrap .section__products--video {
   position: relative;
-  padding: 65px 0 0 0;
+  margin: 65px 36px 0 0;
 }
 
 .section__products .container-wrap .section__products--video .btn__video {
   position: absolute;
-  top: 41.4%;
+  top: 32.4%;
   left: 42.2%;
   width: 75px;
   height: 75px;
@@ -1949,7 +1950,7 @@ input[type='submit'] {
   .section__products .container-wrap .section__products--video .btn__video {
     width: 60px;
     height: 60px;
-    top: 30%;
+    top: 12%;
     left: 50%;
   }
 }
@@ -2131,14 +2132,12 @@ input[type='submit'] {
   }
 }
 
-.section__reviews .container-wrap .section__reviews--tabs .tabset li:hover, .section__reviews .container-wrap .section__reviews--tabs .tabset li:active,
-.section__reviews .container-wrap .section__reviews--tabs .tabset li .active {
+.section__reviews .container-wrap .section__reviews--tabs .tabset li .active, .section__reviews .container-wrap .section__reviews--tabs .tabset li:hover, .section__reviews .container-wrap .section__reviews--tabs .tabset li:active {
   background-color: #f42267;
   border-radius: 20px;
 }
 
-.section__reviews .container-wrap .section__reviews--tabs .tabset li:hover a, .section__reviews .container-wrap .section__reviews--tabs .tabset li:active a,
-.section__reviews .container-wrap .section__reviews--tabs .tabset li .active a {
+.section__reviews .container-wrap .section__reviews--tabs .tabset li .active a, .section__reviews .container-wrap .section__reviews--tabs .tabset li:hover a, .section__reviews .container-wrap .section__reviews--tabs .tabset li:active a {
   color: #fff;
 }
 
@@ -2235,7 +2234,7 @@ input[type='submit'] {
 }
 
 .section__partners .container-wrap .container-partners .partner-block {
-  margin: 20px 45px 22px 0px;
+  padding: 20px 45px 22px 0px;
 }
 
 @media (max-width: 767px) {

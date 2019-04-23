@@ -36,7 +36,7 @@ $(".nav-opener").click(function() {
 jQuery(document).ready(function($) {
 	$('.tab-content').hide();
 	$('.tab-content:first').show();
-	$('.tabset li:first').addClass('active');
+	$('ul.tabset li:first').addClass('active');
 
 	$('.tabset li').click(function(event){
 		$('.tabset li').removeClass('active');

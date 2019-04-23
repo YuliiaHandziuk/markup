@@ -703,7 +703,7 @@
 				letter-spacing: 0.15px;
 	
 				@include media('<desktop') {
-					font-size: 24px;
+					font-size: 22px;
 				}
 			}
 	
@@ -795,11 +795,11 @@
 
 		.section__products--video {
 			position: relative;
-			padding: 65px 0 0 0;
+			margin: 65px 36px 0 0;
 	
 			.btn__video {
 				position: absolute;
-				top: 41.4%;
+				top: 32.4%;
 				left: 42.2%;
 				width: 75px;
 				height: 75px;
@@ -820,7 +820,7 @@
 				@include media('<desktop') {
 					width: 60px;
 					height: 60px;
-					top: 30%;
+					top: 12%;
 					left: 50%;
 				}
 	
@@ -962,9 +962,10 @@
 						}
 					}
 					
+					
+					.active,
 					&:hover, 
-					&:active,
-					.active {
+					&:active {
 					background-color: $pink;
 					border-radius: 20px;
 	
@@ -1049,7 +1050,7 @@
 			flex-wrap: wrap;
 			
 			.partner-block {
-				margin: 20px 45px 22px 0px;	
+				padding: 20px 45px 22px 0px;	
 
 				@include media ('<tablet') {
 					margin: 30px;

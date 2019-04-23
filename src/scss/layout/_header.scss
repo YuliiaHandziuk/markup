@@ -120,7 +120,7 @@
 }
 
 .nav-opener {
-    display: block;
+    display: none;
     cursor: pointer;
     height: 26px;
     width: 26px;
@@ -155,6 +155,7 @@
     }
 
     @include media ('<tablet') {
+        display: block;
         top: 40px;
     }
 }
