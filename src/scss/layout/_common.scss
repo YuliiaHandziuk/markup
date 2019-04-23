@@ -12,13 +12,28 @@
 	width: 100%;
 }
 
+
+
 .visual-block {
 	display: flex;
 	position: relative;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
-	padding: 226px 0px 208px 70px;
+	padding: 226px 0px 208px 72px;
+
+	@include media ('<desktop') {
+		padding-top: 180px;
+		padding-bottom: 125px; 
+	}
+
+	@include media ('<tablet') {
+		padding: 140px 60px 75px 60px; 
+	}
+
+	@include media ('<phone') {
+		padding: 120px 20px 60px 20px;	
+	}
 
 	.container-wrap {
 		max-width: $max-content-width;
@@ -30,12 +45,32 @@
 		flex-direction: column;
 		justify-content: flex-start;
 		width: 55%;
+
+		@include media ('<tablet') {
+			width: 100%;
+		}
 		
 		h1 {
 			color: $white;
 			line-height: 1;
 			margin: 0 0 26px;
-			letter-spacing: -1.3px;
+			letter-spacing: -1px;
+
+			@include media('<widescreen') {
+				font-size: 36px;
+			}
+
+			@include media('<desktop') {
+				font-size: 34px;
+			}
+
+			@include media ('<tablet') {
+				font-size: 32px;
+			}
+
+			@include media ('<phone') {
+				font-size: 26px;
+			}
 		}
 
 		.title {
@@ -45,6 +80,18 @@
 			letter-spacing: -0.4px;
 			margin: 0 0 7px;
 			line-height: 1.2;
+
+			@include media('<desktop') {
+				font-size: 30px;
+			}
+
+			@include media ('<tablet') {
+				font-size: 28px;
+			}
+
+			@include media ('<phone') {
+				font-size: 24px;
+			}
 		}
 
 		p {
@@ -52,8 +99,19 @@
 			color: $white;
 			line-height: 1.4;
 			margin: 0 0 72px 0;
-			letter-spacing: 0.15px;
+			letter-spacing: 0.2px;
 
+			@include media('<desktop') {
+				font-size: 16px;
+			}
+
+			@include media ('<tablet') {
+				font-size: 14px;
+			}
+
+			@include media ('<phone') {
+				margin: 0 0 40px 0;
+			}
 		}
 	}
 
@@ -61,17 +119,37 @@
 		display: inline-block;
 		margin: 0 0 0 48px;
 
+		@include media('<desktop') {
+			margin: 0 0 0 18px;
+		}
+
 		a:first-child {
 			line-height: 0.9;
 			letter-spacing: -0.6px;
-			padding: 1.2em 3.4em 1em 2.4em;
+			padding: 16px 41px 14px 38px;
+
+			@include media('<desktop') {
+				padding: 10px 20px;
+			}
+			
+			@include media ('<tablet') {
+				padding: 8px 16px;
+			}
 		}
 
 		a:nth-child(2) {
 			line-height: 0.9;
 			letter-spacing: -0.6px;
-			padding: 1.2em 2.4em 1em 2.8em;
+			padding: 16px 33px 13px 41px;
 			margin: 0 0 0 16px;
+
+			@include media('<desktop') {
+				padding: 10px 20px;
+			}
+
+			@include media ('<tablet') {
+				padding: 8px 16px;
+			}
 		}
 	}
 
@@ -81,10 +159,24 @@
 		z-index: 3;
 		width: 46.7%;
 		bottom: 0;
-		right: 177px;
+		right: 12.2%;
+
+
+		@include media('<widescreen') {
+			width: 50%;
+			right: 60px;
+		}
+
+		@include media('<desktop') {
+			right: 60px;
+			width: 45%;
+		}
+
+		@include media ('<tablet') {
+			display: none;
+		}
 	}
 }
-
 
 
 
@@ -92,37 +184,83 @@
 	display: flex;
 	justify-content: space-between;
 	position: relative;
-	padding: 78px 0 102px 0;	
+	padding: 78px 0 102px 0;
+	
+	@include media('<widescreen') {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+
+	@include media('<desktop') {
+		padding: 60px;
+	}
+
+	@include media ('<phone') {
+		padding: 60px 20px;
+	}
+	
 
 	.container-wrap {
 		max-width: 954px;
 		margin: 0 auto;
 		padding: 0;
+
+		@include media('<desktop') {
+			max-width: 890px;
+		}
 	}
 
 	.section__about-us--block {
 		width: 48%;
+
+		@include media('<desktop') {
+			width: 55%;
+		}
+
+		@include media ('<tablet') {
+			width: 100%;
+		}
 	}
 
-		em.title {
+		.title {
 			font-family: $base-font-italic;
 			line-height: 1.5;
     		font-size: 24px;
-    		letter-spacing: 1.1px;
+			letter-spacing: 1.1px;
+			
+			@include media('<desktop') {
+				font-size: 22px;
+			}
 		}
 		
 		h2 {
-			margin: 0 0 0.4em 0;
+			margin: 0 0 0.4em;
 			line-height: 1.1;
 			letter-spacing: -1px;
+
+			@include media('<widescreen') {
+				font-size: 32px;
+			}
+
+			@include media('<desktop') {
+				font-size: 32px;
+			}
+
+			@include media ('<phone') {
+				font-size: 26px;
+			}
 		}
+		
 
 		p {
 			font-size: 11px;
 			line-height: 1.9;
-			margin-top: 18px;
-			margin-bottom: 51px;
+			margin: 18px 0 51px;
 			letter-spacing: 0.06px;
+
+			@include media ('<phone') {
+				margin-bottom: 20px;
+			}
 		}
 
 		.nav {
@@ -134,37 +272,68 @@
 					display: inline-block;
 					padding: 9px 37px 7px 10px;
 					
+					@include media('<widescreen') {
+						padding: 20px;
+					}
+
+					@include media('<desktop') {
+						padding: 2%;
+					}
+					
+					@include media ('<phone') {
+						padding: 1%;
+					}
 
 					a {
 						text-transform: uppercase;
 						color: $dark_grey;
 						line-height: 1.9;
 						font-size: 11px;
-						font-family: 'Montserrat', sans-serif;
+						font-family: $base-font-sans-serif;
 						font-weight: 600;
 						letter-spacing: -0.6px;
 					}
-				}
 
-				li:hover {
-					background-color: $pink;
-					border-radius: 20px;
-
-					a {
-						color: $white;
+					&:hover {
+						background-color: $pink;
+						border-radius: 20px;
+	
+						a {
+							color: $white;
+						}
 					}
 				}
-			}	
+			}
 		}
 
 	img {
+		display: block;
 		width: 25%;
 		position: absolute;
 		top: 56px;
 		right: 218px;
 		z-index: 3;
-	}	
+
+		@include media('<widescreen') {
+			width: 30%;
+			top: 90px;
+			right: 100px;
+		}
+
+		@include media('<desktop') {
+			width: 31%;
+			top: 60px;
+			right: 60px;
+		}
+
+		@include media ('<tablet') {
+			display: none;
+		}
+	}
+	
+	
 }
+
 
 
 .section__features  {
@@ -175,16 +344,20 @@
 		max-width: 1190px;
 		padding: 0;
 
+		@include media ('<tablet') {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+		}
+
 	}
 
 	.section__features--block {
 		text-align: center;
-		background-color: $violet;
 
 		img {
 			width: 60px;
 			height: 60px;
-			margin-bottom: 20px;
 		}
 
 		span.count {
@@ -192,7 +365,14 @@
 			font-size: 41px;
 			font-weight: 800;
 			color: $white;
-			
+
+			@include media('<desktop') {
+				font-size: 36px;
+			}
+
+			@include media ('<tablet') {
+				font-size: 32px;
+			}
 		}
 
 		p {
@@ -201,350 +381,670 @@
 			font-weight: 600;
 			line-height: 1.1;
 
+			@include media('<desktop') {
+				font-size: 22px;
+			}
+
 			span {
 				display: block;
 				font-size: 22px;
 				font-weight: 400;
 				letter-spacing: -1.1px;
 				margin-left: 3px;
+
+				@include media('<desktop') {
+					font-size: 20px;
+				}
 			}
 		}
-
 		
-
-	}
-
-	.section__features--block:first-child {
-		width: 31.5%;
-		padding: 60px 37px 54px 19px;
-
-		img {
-			margin: 0 9px 21px 0;
-		}
-
-		span {
-			margin: 0 0 5px 14px;
-		}
-
-		p {
-			margin: 0 8px 22px 0;
-			letter-spacing: -1.2px;
-
+		&:first-child {
+			width: 31.5%;
+			padding: 60px 37px 54px 19px;
+	
+			@include media ('<tablet') {
+				width: 100%;
+				padding: 20px 0;
+			}
+	
+			@include media ('<phone') {
+				padding: 20px;	
+			}
+	
+			img {
+				margin: 0 9px 24px 0;
+	
+				@include media ('<tablet') {
+					margin-bottom: 14px;
+				}
+			}
+	
 			span {
-				margin: 0 0 0 4px
+				margin: 0 0 5px 14px;
+			}
+	
+			p {
+				margin: 0 8px 22px 0;
+				letter-spacing: -1.2px;
+	
+				span {
+					margin: 0 0 0 4px
+				}
+			}
+	
+			.text-block {
+				width: 83%;
+				margin: 0px 0px 0px 34px;
+				
+	
+				@include media ('<tablet') {
+					width: 75%;
+					margin: 0 0 0 77px;
+				}
+	
+				@include media ('<phone') {
+					margin: 0;
+					width: 100%;
+				}
+
+				p {
+					font-size: $font-size-base;
+					line-height: 1.6;
+					letter-spacing: -0.2px;
+				}
+			}	
+		}
+
+		&:nth-child(2) {
+			background-color: $dark_violet;
+			padding: 66px 40px 0px 40px;
+			width: 37%;
+	
+			@include media ('<tablet') {
+				width: 100%;
+				padding: 20px 0;
+			}
+	
+			@include media ('<phone') {
+				padding: 20px;
+			}
+	
+			img {
+				margin: 0 0 16px 0px;
+	
+				@include media ('<tablet') {
+					margin-bottom: 14px;
+				}
+			}
+	
+			span {
+				margin: 0 0 5px 0;
+				letter-spacing: -1.2px;
+			}
+	
+			p {
+				font-size: $font-size-big;
+				font-weight: 400;
+				letter-spacing: -1.6px;
+				
+			}
+	
+			.text-block {
+				width: 72%;
+				margin: 0px 0px 0px 50px;
+	
+				@include media ('<tablet') {
+					width: 75%;
+					margin: 0 0 0 77px;
+				}
+	
+				@include media ('<phone') {
+					margin: 0;
+					width: 100%;
+				}
+
+				p {
+					font-size: $font-size-base;
+					line-height: 1.6;
+					letter-spacing: -0.1px;
+				}
 			}
 		}
 
-		.text-block {
-			width: 83%;
-			margin: 0px 0px 0px 34px;
-			
-		}
+		&:nth-child(3) {
+			padding: 66px 24px 0px 35px;
+			width: 28%;
+	
+			@include media ('<tablet') {
+				width: 100%;
+				padding: 20px 0;
+			}
+	
+			@include media ('<phone') {
+				padding: 20px;
+			}	
+	
+			img {
+				margin: 0 0 18px;
+	
+				@include media ('<tablet') {
+					margin-bottom: 14px;
+				}
+			}
+	
+			p {
+				span {
+					font-size: 22px;
+					color: $white;
+					font-weight: 600;
+					letter-spacing: -1.1px;
+				}
+			}
+	
+			.text-block {
+				width: 93%;
+				margin: 0 0 0 11px;
+	
+				@include media ('<tablet') {
+					width: 75%;
+					margin: 0 0 0 77px;
+				}
+	
+				@include media ('<phone') {
+					margin: 0;
+					width: 100%;
+				}
 
-		.text-block p {
-			font-size: 12px;
-			line-height: 1.6;
-			letter-spacing: -0.3px;
-		}
-	}
-
-	.section__features--block:nth-child(2) {
-		background-color: $dark_violet;
-		padding: 66px 40px 0px 40px;
-		width: 37%;
-
-		img {
-			margin: 0 0 16px 0px;
-		}
-
-		span {
-			margin: 0 0 5px 0;
-			letter-spacing: -1.2px;
-		}
-
-		p {
-			font-size: 24px;
-			font-weight: 400;
-			letter-spacing: -1.6px;
-			
-		}
-
-		.text-block {
-			width: 72%;
-			margin: 0px 0px 0px 50px;
-		}
-
-		.text-block p {
-			font-size: 12px;
-			line-height: 1.6;
-			letter-spacing: -0.1px;
-		}
-	}
-
-	.section__features--block:nth-child(3) {
-		padding: 66px 24px 0px 35px;
-		width: 28%;
-
-		img {
-			margin-bottom: 18px;
-		}
-
-		p {
-			span {
-				font-size: 22px;
-				color: $white;
-				font-weight: 600;
-				letter-spacing: -1.1px;
+				p {
+					font-size: $font-size-base;
+					line-height: 1.6;
+					letter-spacing: -0.1px;
+				}
 			}
 		}
-
-		.text-block {
-			width: 93%;
-			margin: 0 0 0 11px;
-
-		}
-
-		.text-block p {
-			font-size: 12px;
-			line-height: 1.6;
-			letter-spacing: -0.1px;
-		}
 	}
-
 }
 
+
+
 .section__suggest {
-	padding: 76px 0 80px 0;
+	padding: 73px 0 80px;
 	text-align: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+
+	@include media ('<desktop') {
+		padding: 60px 0;
+	}
+	@include media ('<tablet') {
+		padding: 40px;
+	}
+
+	@include media ('<phone') {
+		padding: 40px 20px;
+	}
 
 	.container-wrap {
 		max-width: 900px;
 		padding: 0;
-	}
 
-	em {
-		color: $white;
-		font-family: $base-font-italic;
-		font-size: 36px;
-		line-height: 0.9;
-		letter-spacing: 1.5px;
-	}
-
-	h2 {
-		color: $white;
-		line-height: 1.6;
-		letter-spacing: -0.19px;
-		margin: 0px 0px 14px 27px;
-	}
-
-	.text-block {
-		width: 86%;
-		margin: 0 0 0 75px;
-
-		p {
+		.title {
 			color: $white;
-			font-size: 16px;
-			line-height: 1.6;
-			margin: 0 0 50px 0;
-		}
-	}
-}
-
-.section__products {
-
-	.container-wrap {
-		display: flex;
-		max-width: 1100px;
-		padding: 72px 72px 108px 72px;
-	} 
-
-	.section__products--block {
-		width: 50%;
-
-		em {
-			font-size: 26px;
 			font-family: $base-font-italic;
-			color: $black;
-			line-height: 1.3em;
-			letter-spacing: 0.15px;
+			font-style: italic;
+			font-size: 36px;
+			line-height: 0.9;
+			letter-spacing: 1.5px;
+
+			@include media('<desktop') {
+				font-size: 28px;
+			}
+
+			@include media ('<phone') {
+				font-size: 24px;
+			}
 		}
 
 		h2 {
-			line-height: 1;
-			font-size: 39px;
-			letter-spacing: -0.3px;
-			margin: 0 0 23px 0;
+			color: $white;
+			line-height: 1.6;
+			letter-spacing: -0.19px;
+			margin: 0px 0px 14px 27px;
+
+			@include media('<desktop') {
+				font-size: 32px;
+			}
+
+			@include media ('<tablet') {
+				font-size: 30px;
+				line-height: 1;
+				margin: 20px 0;
+			}
+
+			@include media ('<phone') {
+				font-size: 26px;
+			}
 		}
 
 		.text-block {
-			width: 96%; 
-
-			p {
-				font-size: 14px;
-				line-height: 1.48;
-				letter-spacing: 0.1px;
-			}
-		}
-		.container-products {
-			display: flex;
-
-			.product-block {
-				width: 50%;
-				padding: 24px 23px 0 3px;
-
-				img {
-					width: 60px;
-					height:60px;
-					margin: 0 0 8px 0;
-				}
-
-				span.title-text {
-					display: block;
-					font-size: 20px;
-					color: $dark_grey;
-					font-weight: 800;
-					margin: 0 0 6px 0;
-				}
-
-				.text-block {
-
-					p {
-						font-size: 11px;
-						line-height: 1.9em;
-						margin: 0 0 40px 0;
-					}
-				}
-
-				a {
-					margin: 0;
-				}
-			}
-			
-			.product-block:first-child {
-				padding-left: 0; 
-
-				img {
-					margin: 0 0 8px 8px;
-				}
-			}
-		}
-		
-	}
+			width: 86%;
+			margin: 0 0 0 75px;
 	
-	.section__products--video {
-		position: relative;
-		padding: 65px 0 55px 34px;
+			@include media ('<tablet') {
+				margin: 0;
+				width: 100%;
+			}
+	
+			p {
+				color: $white;
+				font-size: 16px;
+				line-height: 1.6;
+				margin: 0 0 50px;
 
-		.btn__video {
-			position: absolute;
-			top: 41.5%;
-			left: 46.5%;
-			width: 75px;
-			height: 75px;
-			background-color: $pink;
-			border-radius: 50%;
+				@include media('<desktop') {
+					font-size: 14px;
+				}
 
-			img {
-				width: 40px;
-				z-index: 3;
-				margin: 17px 0 0 20px;
-
+				@include media ('<tablet') {
+					margin: 0 0 30px;
+				}
 			}
 		}
-
 	}
 }
+
+
+
+.section__products {
+	padding: 73px 0px 108px 0px;
+
+	@include media('<desktop') {
+		padding: 40px;
+	}
+
+	@include media ('<phone') {
+		padding: 40px 20px;
+	}
+
+	.container-wrap {
+		display: flex;
+		justify-content: space-between;
+		max-width: 1028px;
+		padding: 0;
+
+		@include media('<desktop') {
+			max-width: 960px;
+		}
+
+		@include media ('<tablet') {
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+		}
+
+		.section__products--block {
+			padding-left: 35px;
+			width: 50%;
+	
+			@include media('<desktop') {
+				width: 60%;
+			}
+	
+			@include media ('<tablet') {
+				width: 100%;
+			}
+	
+			@include media ('<phone') {
+				padding: 0;
+			}
+	
+			em.title {
+				font-size: 26px;
+				font-family: $base-font-italic;
+				color: $black;
+				line-height: 1.3em;
+				letter-spacing: 0.15px;
+	
+				@include media('<desktop') {
+					font-size: 24px;
+				}
+			}
+	
+			h2 {
+				line-height: 1;
+				font-size: 39px;
+				letter-spacing: -0.3px;
+				margin: 0 0 23px;
+	
+				@include media('<desktop') {
+					font-size: 32px;
+				}
+	
+				@include media ('<phone') {
+					font-size: 28px;
+				}
+			}
+	
+			.text-block {
+				width: 96%; 
+	
+				p {
+					font-size: 14px;
+					line-height: 1.48;
+					letter-spacing: 0.1px;
+	
+					@include media('<desktop') {
+						font-size: 12px;
+					}
+				}
+			}
+	
+			.container-products {
+				display: flex;
+	
+				.product-block {
+					width: 50%;
+					padding: 24px 23px 0 3px;
+	
+					@include media ('<phone') {
+						padding: 20px 0;
+					}
+	
+					img {
+						width: 60px;
+						height:60px;
+						margin: 0 0 8px;
+					}
+	
+					span.title-text {
+						display: block;
+						font-size: 20px;
+						color: $dark_grey;
+						font-weight: 800;
+						margin: 0 0 6px;
+	
+						@include media('<desktop') {
+							font-size: 18px;
+						}
+					}
+	
+					.text-block {
+	
+						p {
+							font-size: 11px;
+							line-height: 1.9em;
+							margin: 0 0 40px;
+	
+							@include media('<desktop') {
+								line-height: 1.6;
+							}
+						}
+					}
+	
+					a {
+						margin: 0;
+					}
+	
+					&:first-child {
+						padding-left: 0; 
+		
+						img {
+							margin: 0 0 8px 8px;
+						}
+					}
+				}
+			}
+		}
+
+		.section__products--video {
+			position: relative;
+			padding: 65px 0 0 0;
+	
+			.btn__video {
+				position: absolute;
+				top: 41.4%;
+				left: 42.2%;
+				width: 75px;
+				height: 75px;
+				background-color: $pink;
+				border-radius: 50%;
+	
+				img {
+					width: 40px;
+					z-index: 3;
+					margin: 17px 0 0 20px;
+
+					@include media('<desktop') {
+						width: 30px;
+					}
+	
+				}
+	
+				@include media('<desktop') {
+					width: 60px;
+					height: 60px;
+					top: 30%;
+					left: 50%;
+				}
+	
+				@include media ('<tablet') {
+					top: 50%;
+				}
+	
+				@include media ('<phone') {
+					top: 33%;
+					left: 40%;
+				}
+			}
+	
+			@include media('<widescreen') {
+				width: 50%;
+				padding-left: 60px;
+			}
+	
+			@include media('<desktop') {
+				width: 44%;
+				
+			}
+	
+			@include media ('<tablet') {
+				width: 75%;
+				
+			}
+	
+			@include media ('<phone') {
+				width: 100%;
+				padding: 20px 0;
+			}
+		}
+	} 	
+}
+
 
 
 .section__reviews {
-	padding: 50px 0 0 0;
+	padding: 50px 0 0;
+
+	@include media ('<phone') {
+		padding: 40px 20px;
+	}
 
 	.container-wrap {
 		max-width: 1024px;
-	}
 
-	.section__reviews--title {
-		text-align: center;
-		padding: 0 100px;
-
-		h2 {
-			font-size: 41px;
-			letter-spacing: -0.7px;
-			margin: 0 0 23px 28px;
+		@include media('<desktop') {
+			max-width: 960px;
 		}
 
-		p {
-			font-size: 16px;
-			line-height: 1.6;
-			margin: 0 0 0 26px;
+		@include media('<phone') {
+			padding: 0;
 		}
-		
-	}
 
-	.section__reviews--tabs {
+		.section__reviews--title {
+			text-align: center;
+			padding: 0 100px;
 	
-		.tabset {
-			display: flex;
-			justify-content: center;
-			padding: 36px 0;
+			@include media ('<tablet') {
+				padding: 0;
+				text-align: center;
+			}
+	
+			h2 {
+				font-size: 41px;
+				letter-spacing: -0.7px;
+				margin: 0 0 23px 28px;
 
-			li {
-				padding: 10px 30px 11px 27px;
+				@include media('<desktop') {
+					font-size: 38px;
+				}
 
-				a {
-					color: $dark_grey;
-					font-size: 15px;
-					text-transform: uppercase;
-					letter-spacing: -1.2px;
-					font-weight: 600;
+				@include media ('<tablet') {
+					font-size: 36px;
+				}
+
+				@include media ('<phone') {
+					font-size: 28px;
+					margin: 0 0 20px;
 				}
 			}
+	
+			p {
+				font-size: 16px;
+				line-height: 1.6;
+				margin: 0 0 0 26px;
 
-			li:hover {
-				background-color: $pink;
-				border-radius: 20px;
-
-				a {
-					color: $white;
+				@include media('<desktop') {
+					font-size: 14px;
+					line-height: 1.4;
 				}
-			}
 
+				@include media ('<tablet') {
+					font-size: 12px;
+				}
+
+				@include media ('<phone') {
+					margin: 0 0 40px 0;
+				}
+			}	
 		}
 
-		.tab-content {
-
-			.image-block {
-				padding: 0 12px 23px;
-				width: calc(100% / 3 -.1px);
-			}
-
-			.container-image {
+		.section__reviews--tabs {
+	
+			.tabset {
 				display: flex;
-				justify-content: space-around;
+				justify-content: center;
 				flex-wrap: wrap;
-				margin: 22px 6px 25px;
-			}
+				padding: 36px 0;
+				overflow: hidden;
+	
+				li {
+					padding: 12px 30px 11px 27px;
+					cursor: pointer;
 
-			.js-tab-hidden {
-				display: block !important;
-				left: -9999px !important;
-				position: absolute !important;
-				top: -9999px !important;
+					@include media ('<phone') {
+						padding: 14px 40px 12px 30px;
+					}
+
+					a {
+						color: $dark_grey;
+						font-size: 15px;
+						text-transform: uppercase;
+						letter-spacing: -1.2px;
+						font-weight: 600;
+	
+						@include media('<desktop') {
+							font-size: 14px;
+						}
+	
+						@include media ('<tablet') {
+							font-size: 12px;
+						}
+	
+						@include media ('<phone') {
+							font-size: 14px;
+						}
+					}
+					
+					&:hover, 
+					&:active,
+					.active {
+					background-color: $pink;
+					border-radius: 20px;
+	
+						a {
+							color: $white;
+						}
+					}				
+				}		
+			}
+	
+			.tab-contentainer {
+
+				.tab-content {
+					display: flex;
+					justify-content: space-around;
+					flex-wrap: wrap;
+					margin: 22px 6px 25px;
+				}
+	
+				.image-block {
+					padding: 0 12px 23px;
+					width: calc(100% / 3 -.1px);
+	
+					@include media('<desktop') {
+						width: 30%;
+					}
+	
+					@include media ('<tablet') {
+						width: 50%;
+					}
+				}
 			}
 		}
-	}
 
-	.section__reviews--button {
-		text-align: center;
-		padding: 43px 0 104px 24px;
-	}
+		.section__reviews--button {
+			text-align: center;
+			padding: 40px 0 104px 24px;
+	
+			@include media('<desktop') {
+				padding-bottom: 80px;
+			}
+
+			@include media ('<phone') {
+				padding: 20px 0 40px 0;
+			}
+	
+			.btn__read_more {
+
+				@include media ('<tablet') {
+					padding: 1.2em 1.4em;
+			  	}
+			}
+		}
+	}	
 }
+
+
 
 .section__partners {
 	padding: 70px 0;
 
+	@include media ('<phone') {
+		padding: 20px;
+	}
+
 	.container-wrap {
 		max-width: 800px;
+
+		@include media('<desktop') {
+			padding-left: 60px;
+			padding-right: 40px;
+		}
+		
+		@include media ('<phone') {
+			padding: 0;
+		}
 
 		.container-partners {
 			display: flex;
@@ -553,17 +1053,36 @@
 			flex-wrap: wrap;
 			
 			.partner-block {
-				margin: 20px 45px 22px 0px;;
-				
-				
+				margin: 20px 45px 22px 0px;	
+
+				@include media ('<tablet') {
+					margin: 30px;
+					width: 30%;
+				}
+
+				@include media ('<phone') {
+					padding: 0;
+					margin: 15px;
+					width: 35%;
+				}
 			}
 		}
 	}
 }
 
+
+
 .section__quote {
 	padding: 54px 0 78px;
 	position: relative;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+
+	@include media('<desktop') {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
 
 	.container-wrap {
 		max-width: 826px;
@@ -573,16 +1092,40 @@
 			font-family: $base-font-italic;
 			font-size: 34px;
 			letter-spacing: -0.6px;
+
+			@include media('<desktop') {
+				font-size: 30px;
+			}
+
+			@include media ('<phone') {
+				font-size: 22px;
+			}
 		}
 
 		h2 {
 			color: $white;
+
+			@include media('<desktop') {
+				font-size: 38px;
+			}
+
+			@include media ('<phone') {
+				font-size: 28px;
+			}
 		}
 
 		blockquote {
 			width: 55%;
 			margin: 50px 40px 95px;
 			quotes: inherit;
+
+			@include media('<desktop') {
+				width: 45%;
+			}
+
+			@include media ('<tablet') {
+				width: 100%;
+			}
 
 			q {
 				color: $white;
@@ -591,20 +1134,24 @@
 				font-style: italic;
 				letter-spacing: -0.4px;
 				line-height: 1.2;
+
+				@include media('<desktop') {
+					font-size: 16px;
+				}
+			}
+
+			&:before {
+				position: absolute;
+				content: open-quote;
+				font-size: 12em;
+				font-style: italic;
+				margin-left: -0.48em;
+				margin-top: -0.34em;
+				color: $pink;
+				z-index: 10;
+				quotes: inherit;
 			}
 		} 
-
-		blockquote:before {
-			position: absolute;
-			content: open-quote;
-			font-size: 12em;
-			font-style: italic;
-			margin-left: -0.48em;
-			margin-top: -0.34em;
-			color: $pink;
-			z-index: 10;
-			quotes: inherit;
-		}
 
 		cite {
 			display: block;
@@ -612,93 +1159,184 @@
 			font-size: 20px;
 			font-family: $base-font-sans-serif;
 			margin: 0px 0 0 34px;
+
+			@include media('<desktop') {
+				font-size: 18px;
+			}
+
+			&:before {
+				content: url(/images/stars.png);
+				position: absolute;
+				margin-top: -1.9em;
+				margin-left: 0.2em;
+			}
 		}
 
-		cite:before {
-			content: url(/images/stars.png);
+		.client-photo {
 			position: absolute;
-			margin-top: -1.9em;
-			margin-left: 0.2em;
-		}
-	}
-	.client-photo {
-		position: absolute;
-		z-index: 10;
-		top: 11px;
-		right: 338px;
+			z-index: 10;
+			right: 338px;
+			bottom: 0;
+	
+	
+			@include media('<widescreen') {
+				right: 140px;
+			}
+	
+			@include media('<desktop') {
+				width: 27%;
+				right: 120px;
+			}
+	
+			@include media ('<tablet') {
+				display: none;
+			}
+		}	
 	}
 }
+
+
 
 .section__callback {
 	padding: 60px 0 52px;
 
+	@include media('<desktop') {
+		padding-left: 60px;
+		padding-right: 60px;
+	}
+
+	@include media ('<tablet') {
+		padding: 40px;
+	}
+
 	.container-wrap {
 		max-width: 1000px;
-	}
 
-	.section__callback--title {
-		text-align: center;
-
-		h2 {
-			margin: 0 40px 0 0;
-			color: $white;
+		@include media('<desktop') {
+			max-width: 860px;
 		}
 
-		h4 {
-			color: $white;
-			padding: 5px 42px 0 0px;
-			letter-spacing: -1.3px;
-		}
-		
-		.text-block {
-			padding: 11px 32px 0 0;
-
-			p {
+		.section__callback--title {
+			text-align: center;
+	
+			h2 {
+				margin: 0 40px 0 0;
 				color: $white;
-				font-size: 14px;
-				letter-spacing: 0.1px;
-				line-height: 1.4;
-				margin: 0;
+	
+				@include media('<desktop') {
+					font-size: 36px;
+				}
+	
+				@include media ('<tablet') {
+					margin: 0;
+				}
+	
+				@include media ('<phone') {
+					font-size: 28px;
+				}
 			}
-		}
-	}
-
-	.section__callback--form {
-		padding: 52px 10px 10px;
-		display: flex;
-
-		input {
-			width: 41%;
-			margin: 0 16px 0 0;
-			background-color: rgba($white, 0.35);
-			border-radius: 8px;
-			border: none;
+	
+			h4 {
+				color: $white;
+				padding: 5px 42px 0 0px;
+				letter-spacing: -1.3px;
+	
+				@include media('<desktop') {
+					font-size: 24px;
+				}
+	
+				@include media ('<tablet') {
+					margin: 0;
+					padding: 0;
+				}
+	
+				@include media ('<phone') {
+					font-size: 22px;
+				}
+			}
 			
+			.text-block {
+				padding: 11px 32px 0 0;
+	
+				@include media ('<tablet') {
+					margin: 0;
+					padding: 10px 0;
+				}
+	
+				p {
+					color: $white;
+					font-size: 14px;
+					letter-spacing: 0.1px;
+					line-height: 1.4;
+					margin: 0;
+	
+					@include media('<desktop') {
+						font-size: 12px;
+						line-height: 1.6;
+					}
+				}
+			}	
 		}
 
-		input::placeholder{
-			color: $white;
-			font-size: 12px;
-			font-weight: 600;
-			padding: 14px 20px;
-			letter-spacing: 0.2px;
-		}
+		.section__callback--form {
+			padding: 52px 10px 10px;
+			display: flex;
+	
+			@include media ('<tablet') {
+				flex-direction: column;
+				align-items: center;
+				padding: 10px 0;
+			}
+	
+			input {
+				width: 41%;
+				margin: 0 16px 0 0;
+				background-color: rgba($white, 0.35);
+				border-radius: 8px;
+				border: none;
 
-		.btn-form {
-			padding: 14px 32px;
-			color: $white;
-			font-weight: 600;
-			opacity: 1;
-			text-transform: uppercase;
-			border-radius: $btn-trim;
-			border-bottom: 7px solid $light_violet; 
-
+				@include media ('<tablet') {
+					width: 100%;
+					margin: 0 0 20px;
+				}
+				
+				&::placeholder{
+					color: $white;
+					font-size: 12px;
+					font-weight: 600;
+					padding: 14px 20px;
+					letter-spacing: 0.2px;
+				}
+			}
+	
+			.btn-form {
+				padding: 14px 32px;
+				color: $white;
+				font-weight: 600;
+				opacity: 1;
+				text-transform: uppercase;
+				border-radius: $btn-trim;
+				border-bottom: 7px solid $light_violet; 
+				
+				@include media ('<tablet') {
+					width: 30%;
+				}
+				@include media ('<phone') {
+					width: 50%;
+				}
+			}	
 		}
-	}
+	}	
 }
+
+
 
 .section__socials {
 	padding: 62px 0;
+
+	@include media ('<phone') {
+		padding: 40px 20px;
+	}
 
 	.container-wrap {
 		max-width: 800px;
@@ -707,6 +1345,11 @@
 
 	ul {
 		display: flex;
+		flex-wrap: wrap;
+
+		@include media('<desktop') {
+			justify-content: center;
+		}
 
 		li {
 			padding: 0;
@@ -717,66 +1360,134 @@
 				color: $white;
 				font-size: 22px;
 				font-weight: 400;
+
+				@include media('<desktop') {
+					font-size: 20px;
+				}
+
+				@include media ('<tablet') {
+					padding: 0 10px;
+					font-size: 16px;
+				}
+
+				@include media ('<phone') {
+					font-size: 18px;
+					padding: 14px;
+				}
 			}
 		}
-	}
+	}	
 }
+
+
 
 .section__navigation {
 	padding: 90px 0 80px;
+
+	@include media('<desktop') {
+		padding: 60px;
+	}
+
+	@include media ('<tablet') {
+		padding: 20px;
+	}
 
 	.container-wrap {
 		max-width: 982px;
 		padding: 0;
 		display: flex;
-	}
 
-	.section__navigation--sitemap {
-		display: flex;
-		width: 50%;
-		flex-wrap: wrap;
+		@include media ('<tablet') {
+			flex-direction: column;
+		}
 
-		.list-block {
-			width: 40%;
-			margin: 0px 30px 29px 0;
-
-			.title {
-				color: $violet;
-				font-size: 20px;
-				font-weight: 800;
-				letter-spacing: 0.6px;
+		.section__navigation--sitemap {
+			display: flex;
+			width: 50%;
+			flex-wrap: wrap;
+	
+			@include media ('<tablet') {
+				width: 100%;
 			}
+	
+			.list-block {
+				width: 40%;
+				margin: 0px 30px 29px 0;
 
-			ul {
-				margin: 20px 0;
+				.list-block:nth-child(3),
+				.list-block:nth-child(4) {
+					margin: 20px 30px 10px 0;
+				}
 
-				li {
-					padding: 2px 0 4px 14px;
+				@include media('<desktop') {
+					margin-bottom: 0;
+				}
 
-					a {
-						font-size: 12px;
-						font-family: 'Poppins';
-						font-weight: 800;
-						color: $black;
+				@include media ('<tablet') {
+					width: 25%;
+					margin: 0;
+				}
+
+				@include media ('<phone') {
+					width: 40%;
+					margin: 14px;	
+				}
+
+				.title {
+					color: $violet;
+					font-size: 20px;
+					font-weight: 800;
+					letter-spacing: 0.6px;
+				}
+	
+				ul {
+					margin: 20px 0;
+	
+					li {
+						padding: 2px 0 4px 14px;
+	
+						a {
+							font-size: 12px;
+							font-family: 'Poppins';
+							font-weight: 800;
+							color: $black;
+	
+							@include media ('<tablet') {
+								font-size: 14px;
+							}
+						}
 					}
 				}
 			}
 		}
-	}
 
-		.list-block:nth-child(3),
-		.list-block:nth-child(4) {
-			margin: 20px 30px 10px 0;
-		}
+		.section__navigation--gallery {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			width: 50%;
+			padding: 3px 16px 0 12px;
+	
+			@include media('<desktop') {
+				width: 50%; 
+			}
+	
+			@include media ('<tablet') {
+				width: 100%;
+			}
+	
+			.photo-block {
+				padding: 0;
 
-	.section__navigation--gallery {
-		display: flex;
-		flex-wrap: wrap;
-		width: 50%;
+				@include media('<desktop') {
+					width: 45%;
+				}
 
-		.photo-block {
-			margin: 3px 6px 0px 10px;
-			padding: 0;
+				@include media ('<tablet') {
+					width: 50%;
+					padding: 10px;
+				}
+			}
 		}
 	}
 }
@@ -784,10 +1495,6 @@
 
 //buttons
 
-.visual-block__btn {
-	padding: $btn-padding-big;
-	border-radius: $trim-big;
-}
 
 .btn-pink {
 	background-color: $pink;	
@@ -804,6 +1511,7 @@
 	color: $white;
 	border: none;
 	font-weight: 800;
+	border-radius: $trim-big;
 }
 
 .btn__read_more {
@@ -813,6 +1521,10 @@
 	border-bottom: 7px solid $pink_btn_border_bottom; 
 	font-size: 12px;
 	line-height: 1.7;
+
+	@include media('<desktop') {
+		padding: $btn-padding-small;
+	}
 }
 
 
