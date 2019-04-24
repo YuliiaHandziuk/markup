@@ -6,6 +6,8 @@
 
         ul {
             display: flex;
+            justify-content: center;
+            width: 100%;
 
             @include media ('<tablet') {
                 flex-direction: column;
@@ -16,12 +18,17 @@
                 padding: 0;
                 padding: 0 12px;
 
-                p {
+                a {
                     font-size: 15px;
                     color: $black;
                     line-height: 2.6;
-                    font-family: 'Poppins';
+                    font-family: 'Poppins', sans-serif;
                     font-weight: 800;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $pink;
+                    }
 
                     @include media ('<tablet') {
                         margin: 0px;

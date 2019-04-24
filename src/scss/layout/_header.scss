@@ -8,14 +8,30 @@
     margin: 0 auto;
 
     .container-wrap {
-        max-width: 91.4%;
+        max-width: 1319px;
         padding: 0;
         display: flex;
         justify-content: space-between;
 
+        @include media ('<widescreen') {
+            max-width: 1024px;
+        }
+
+        @include media ('<desktop') {
+            max-width: 768px;
+        }
+
         .logo {
             display: inline-block;
             padding: 2px 0 0 4px;
+
+            @include media ('<tablet') {
+                padding-left: 20px;
+            }
+
+            @include media ('<phone') {
+                padding-left: 20px;
+            }
 
             img {
 
@@ -78,6 +94,10 @@
                     color: $white;
                     letter-spacing: 0.3px;
                     line-height: 5;
+
+                    &:hover {
+                        color: $pink;
+                    }
 
                     @include media ('<desktop') {
                         line-height: 3.5;
