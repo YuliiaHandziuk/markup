@@ -16,35 +16,35 @@
       <header id="header">
         <div class="container-wrap">
           <div class="logo"><a href="#"><img src="images/logo.png" alt="BlueRex"></a></div>
-          <div class="nav-holder"><a class="nav-opener" href="#" onclick="return false"><i class="icon"> </i></a>
+          <nav class="nav-holder"><a class="nav-opener" href="#" onclick="return false"><i class="icon"></i><i class="icon"></i><i class="icon"> </i></a>
             <div class="nav-slide">
-              <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#product">Product</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#faq">Faq  </a></li>
-                <li><a href="#contact">Contact</a></li>
+              <ul id="menu">
+                <li><a class="nav-link" href="#home">Home</a></li>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#features">Features</a></li>
+                <li><a class="nav-link" href="#product">Product</a></li>
+                <li><a class="nav-link" href="#reviews">Reviews</a></li>
+                <li><a class="nav-link" href="#faq">Faq</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
               </ul>
             </div>
-          </div>
+          </nav>
         </div>
       </header>
-      <main> 
+      <main>
         <div id="content">
           <div class="visual-block" id="home" style="background-image: url(images/header_bgrd.jpg)">
             <div class="container-wrap">
-              <div class="visual-block__title"><em class="title">We are best and creative agency</em>
+              <div class="visual-block--content"><em class="title">We are best and creative agency</em>
                 <h1>We turn creative ideas into your business.</h1>
                 <p>Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.</p>
-                <div class="visual-block__buttons"><a class="btn-pink btn" href="#">Our Story</a><a class="btn-violet btn" href="#">Read More</a></div><img src="images/photo_1.png" alt="person">
-              </div>
+                <div class="visual-block__buttons"><a class="btn-pink btn" href="#">Our Story</a><a class="btn-violet btn" href="#">Read More</a></div>
+              </div><img class="person-image" src="images/photo_1.png" alt="person">
             </div>
           </div>
           <div class="section__about-us" id="about" style="background-image: url(images/world_map_bgrd.jpg)">
             <div class="container-wrap">
-              <div class="section__about-us--block"><em class="title">Dream Big Inspire the World</em>
+              <div class="section__about-us--content"><em class="title">Dream Big Inspire the World</em>
                 <h2>We turn creative ideas into your business.</h2>
                 <nav class="nav">
                   <ul>
@@ -55,122 +55,113 @@
                   </ul>
                 </nav>
                 <div class="text-block">
-                  <p>Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.Lorem ipsum dolor sit am et, consec tetur adipi scing elit. </p><a class="btn-pink btn__read_more btn" href="#">Read More</a>
-                </div><img src="images/watch.png" alt="watch">
-              </div>
+                  <p>Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.Lorem ipsum dolor sit am et, consec tetur adipi scing elit.</p><a class="btn-pink btn__read_more btn" href="#">Read More</a>
+                </div>
+              </div><img class="watch-image" src="images/watch.png" alt="watch">
             </div>
           </div>
           <div class="section__features" id="features" style="background-color: #4b2d7f">
             <div class="container-wrap">
-              <div class="section__features--block"><img src="images/headphone.svg" alt="megaphone"><span class="count">500+</span>
-                <p>Successfully <span>completed projects</span></p>
-                <div class="text-block">
-                  <p>Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.</p>
-                </div>
+              <div class="section__features--block">
+                <div class="icon-megaphone"></div>
+                <div class="count">500+</div><b class="title">Successfully<br><span>completed projects</span></b>
+                <p>Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.</p>
               </div>
-              <div class="section__features--block"><img src="images/headphone.svg" alt="megaphone"><span class="count">254+</span>
-                <p>Highly specialised<span>employees</span></p>
-                <div class="text-block">
-                  <p>Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.</p>
-                </div>
+              <div class="section__features--block">
+                <div class="icon-megaphone"></div>
+                <div class="count">254+</div><b class="title">Highly specialised<br><span>employees</span></b>
+                <p>Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.</p>
               </div>
-              <div class="section__features--block"><img src="images/headphone.svg" alt="megaphone"><span class="count">45+</span>
-                <p>Awards<span> around the world</span></p>
-                <div class="text-block">
-                  <p>Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.</p>
-                </div>
+              <div class="section__features--block">
+                <div class="icon-megaphone"></div>
+                <div class="count">45+</div><b class="title">Awards<br><span> around the world</span></b>
+                <p>Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.</p>
               </div>
             </div>
           </div>
           <div class="section__suggest" style="background-image: url(images/monitor_bgrd.jpg)">
-            <div class="container-wrap">
-              <div class="title">Let's Grow Together</div>
+            <div class="container-wrap"><em class="title">Let's Grow Together</em>
               <h2>We turn creative ideas into your business.</h2>
-              <div class="text-block"> 
-                <p>Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit. </p><a class="btn-pink btn__read_more btn" href="#">Read More</a>
-              </div>
+              <p>Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit.</p><a class="btn-pink btn__read_more btn" href="#">Read More</a>
             </div>
           </div>
-          <div class="section__products" id="product" style="background-color: #ffffff">
+          <div class="section__products" id="product">
             <div class="container-wrap">
-              <div class="section__products--block"><em class="title">We are best and creative agency</em>
+              <div class="section__products--content"><em class="title">We are best and creative agency</em>
                 <h2>We turn creative ideas into your business.</h2>
-                <div class="text-block">
-                  <p>Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.</p>
-                </div>
+                <p>Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.</p>
                 <div class="container-products">
-                  <div class="product-block"><img src="images/message.png" alt="message"><span class="title-text">Graphic Design</span>
-                    <div class="text-block">
-                      <p> Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.</p>
-                    </div><a class="btn-pink btn__read_more btn" href="#">Read More</a>
+                  <div class="product-block"><img class="icon" src="images/message.png" alt="message"><span class="title-text">Graphic Design</span>
+                    <p>Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.</p><a class="btn-pink btn__read_more btn" href="#">Read More</a>
                   </div>
-                  <div class="product-block"><img src="images/megaphone.png" alt="megaphone"><span class="title-text">Graphic Design</span>
-                    <div class="text-block">
-                      <p>Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.</p>
-                    </div><a class="btn-pink btn__read_more btn" href="#">Read More</a>
+                  <div class="product-block"><img class="icon" src="images/megaphone.png" alt="megaphone"><span class="title-text">Graphic Design</span>
+                    <p>Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.</p><a class="btn-pink btn__read_more btn" href="#">Read More</a>
                   </div>
                 </div>
               </div>
-              <div class="section__products--video"><img class="video-cover" src="images/video-photo.jpg" alt="video_title"><a class="btn__video" href="#"> <img src="images/video-btn.svg" alt="video-button"></a></div>
+              <div class="section__products--video">
+                <div class="video-box"><img class="video-cover" src="images/video-photo.jpg" alt="video_title"><a class="btn__video" href="#">
+                    <div class="icon-video-btn"></div></a></div>
+              </div>
             </div>
           </div>
           <div class="section__reviews" id="reviews" style="background-color: #f1f1f1">
             <div class="container-wrap">
-              <div class="section__reviews--title">
+              <div class="section__reviews--heading">
                 <h2>Our Recent Work</h2>
                 <p>Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.Lorem ipsum dolor sit am et, consec tetur adipi scing elit. </p>
               </div>
               <div class="section__reviews--tabs">
                 <ul class="tabset">
-                  <li><a href="#tab1" onclick="return false">Web design</a></li>
-                  <li><a href="#tab2" onclick="return false">Mobile App</a></li>
-                  <li><a href="#tab3" onclick="return false">Branding</a></li>
-                  <li><a href="#tab4" onclick="return false">Branding</a></li>
+                  <li><a href="#tab1">Web design</a></li>
+                  <li><a href="#tab2">Mobile App</a></li>
+                  <li><a href="#tab3">Branding</a></li>
+                  <li><a href="#tab4">Branding</a></li>
                 </ul>
                 <div class="tab-contentainer">
                   <div class="tab-content" id="tab1">
-                    <div class="image-block"><a href="#"> <img src="images/photo_1.jpg" alt="photo-product"></a></div>
-                    <div class="image-block"><a href="#"> <img src="images/photo_2.jpg" alt="photo-product"></a></div>
-                    <div class="image-block"><a href="#"> <img src="images/photo_3.jpg" alt="photo-product"></a></div>
-                    <div class="image-block"><a href="#"> <img src="images/photo_4.jpg" alt="photo-product"></a></div>
-                    <div class="image-block"><a href="#"> <img src="images/photo_5.jpg" alt="photo-product"></a></div>
-                    <div class="image-block"><a href="#"> <img src="images/photo_6.jpg" alt="photo-product"></a></div>
-                    <div class="image-block"><a href="#"> <img src="images/photo_7.jpg" alt="photo-product"></a></div>
-                    <div class="image-block"><a href="#"> <img src="images/photo_8.jpg" alt="photo-product"></a></div>
-                    <div class="image-block"><a href="#"> <img src="images/photo_9.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_1.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_2.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_3.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_4.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_5.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_6.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_7.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_8.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_9.jpg" alt="photo-product"></a></div>
                   </div>
                   <div class="tab-content" id="tab2">
-                    <div class="image-block"><a href="#"> <img src="images/photo_9.jpg" alt="photo-product"></a></div>
-                    <div class="image-block"><a href="#"> <img src="images/photo_8.jpg" alt="photo-product"></a></div>
-                    <div class="image-block"><a href="#"> <img src="images/photo_7.jpg" alt="photo-product"></a></div>
-                    <div class="image-block"><a href="#"> <img src="images/photo_6.jpg" alt="photo-product"></a></div>
-                    <div class="image-block"><a href="#"> <img src="images/photo_5.jpg" alt="photo-product"></a></div>
-                    <div class="image-block"><a href="#"> <img src="images/photo_4.jpg" alt="photo-product"></a></div>
-                    <div class="image-block"><a href="#"> <img src="images/photo_3.jpg" alt="photo-product"></a></div>
-                    <div class="image-block"><a href="#"> <img src="images/photo_2.jpg" alt="photo-product"></a></div>
-                    <div class="image-block"><a href="#"> <img src="images/photo_1.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_9.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_8.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_7.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_6.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_5.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_4.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_3.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_2.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_1.jpg" alt="photo-product"></a></div>
                   </div>
                   <div class="tab-content" id="tab3">
-                    <div class="image-block"><a href="#"> <img src="images/photo_1.jpg" alt="photo-product"></a></div>
-                    <div class="image-block"><a href="#"> <img src="images/photo_2.jpg" alt="photo-product"></a></div>
-                    <div class="image-block"><a href="#"> <img src="images/photo_3.jpg" alt="photo-product"></a></div>
-                    <div class="image-block"><a href="#"> <img src="images/photo_4.jpg" alt="photo-product"></a></div>
-                    <div class="image-block"><a href="#"> <img src="images/photo_5.jpg" alt="photo-product"></a></div>
-                    <div class="image-block"><a href="#"> <img src="images/photo_6.jpg" alt="photo-product"></a></div>
-                    <div class="image-block"><a href="#"> <img src="images/photo_7.jpg" alt="photo-product"></a></div>
-                    <div class="image-block"><a href="#"> <img src="images/photo_8.jpg" alt="photo-product"></a></div>
-                    <div class="image-block"><a href="#"> <img src="images/photo_9.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_1.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_2.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_3.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_4.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_5.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_6.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_7.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_8.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_9.jpg" alt="photo-product"></a></div>
                   </div>
                   <div class="tab-content" id="tab4">
-                    <div class="image-block"><a href="#"> <img src="images/photo_9.jpg" alt="photo-product"></a></div>
-                    <div class="image-block"><a href="#"> <img src="images/photo_8.jpg" alt="photo-product"></a></div>
-                    <div class="image-block"><a href="#"> <img src="images/photo_7.jpg" alt="photo-product"></a></div>
-                    <div class="image-block"><a href="#"> <img src="images/photo_6.jpg" alt="photo-product"></a></div>
-                    <div class="image-block"><a href="#"> <img src="images/photo_5.jpg" alt="photo-product"></a></div>
-                    <div class="image-block"><a href="#"> <img src="images/photo_4.jpg" alt="photo-product"></a></div>
-                    <div class="image-block"><a href="#"> <img src="images/photo_3.jpg" alt="photo-product"></a></div>
-                    <div class="image-block"><a href="#"> <img src="images/photo_2.jpg" alt="photo-product"></a></div>
-                    <div class="image-block"><a href="#"> <img src="images/photo_1.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_9.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_8.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_7.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_6.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_5.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_4.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_3.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_2.jpg" alt="photo-product"></a></div>
+                    <div class="image-block"><a href="#"><img src="images/photo_1.jpg" alt="photo-product"></a></div>
                   </div>
                 </div>
               </div>
@@ -180,14 +171,14 @@
           <div class="section__partners" id="faq" style="background-color: #4b2d7f">
             <div class="container-wrap">
               <div class="container-partners">
-                <div class="partner-block"> <a href="#"><img src="images/cisco.png" alt="cisco-logo"></a></div>
-                <div class="partner-block"> <a href="#"><img src="images/adidas.png" alt="partner-logo"></a></div>
-                <div class="partner-block"> <a href="#"><img src="images/lenovo.png" alt="partner-logo"></a></div>
-                <div class="partner-block"> <a href="#"><img src="images/disney.png" alt="partner-logo"></a></div>
-                <div class="partner-block"> <a href="#"><img src="images/amazon.png" alt="partner-logo"></a></div>
-                <div class="partner-block"> <a href="#"><img src="images/puma.png" alt="partner-logo"></a></div>
-                <div class="partner-block"> <a href="#"><img src="images/apple.png" alt="partner-logo"></a></div>
-                <div class="partner-block"> <a href="#"><img src="images/mini.png" alt="partner-logo"></a></div>
+                <div class="partner-block"><a href="#"><img src="images/cisco.png" alt="cisco-logo"></a></div>
+                <div class="partner-block"><a href="#"><img src="images/adidas.png" alt="partner-logo"></a></div>
+                <div class="partner-block"><a href="#"><img src="images/lenovo.png" alt="partner-logo"></a></div>
+                <div class="partner-block"><a href="#"><img src="images/disney.png" alt="partner-logo"></a></div>
+                <div class="partner-block"><a href="#"><img src="images/amazon.png" alt="partner-logo"></a></div>
+                <div class="partner-block"><a href="#"><img src="images/puma.png" alt="partner-logo"></a></div>
+                <div class="partner-block"><a href="#"><img src="images/apple.png" alt="partner-logo"></a></div>
+                <div class="partner-block"><a href="#"><img src="images/mini.png" alt="partner-logo"></a></div>
               </div>
             </div>
           </div>
@@ -196,10 +187,10 @@
               <div class="section__quote--title"><em class="title">Our Happy Client</em>
                 <h2>Testimonials</h2>
               </div>
-              <blockquote cite="#"> 
+              <blockquote cite="#">
                 <q>Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit.</q>
-              </blockquote>
-              <cite>Mr. John Doe</cite><img class="client-photo" src="images/client.png" alt="client">
+                <cite>Mr. John Doe</cite>
+              </blockquote><img class="client-photo" src="images/client.png" alt="client">
             </div>
           </div>
           <div class="section__callback" id="contact" style="background-image: url(images/callback_bg.jpg)">
@@ -207,9 +198,7 @@
               <div class="section__callback--title">
                 <h2>Need Help?</h2>
                 <h4>Don't Forget to Contact With Us</h4>
-                <div class="text-block">
-                  <p>Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus.</p>
-                </div>
+                <p>Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus.</p>
               </div>
               <div class="section__callback--form">
                 <input type="text" placeholder="Name">
@@ -221,11 +210,11 @@
           <div class="section__socials" style="background-color: #4b2d7f">
             <div class="container-wrap">
               <ul>
-                <li><a href="#">facebook</a></li>
-                <li><a href="#">twitter</a></li>
-                <li><a href="#">linkedin</a></li>
-                <li><a href="#">instagram</a></li>
-                <li><a href="#">behance</a></li>
+                <li><a class="partner-link" href="#">facebook</a></li>
+                <li><a class="partner-link" href="#">twitter</a></li>
+                <li><a class="partner-link" href="#">linkedin</a></li>
+                <li><a class="partner-link" href="#">instagram</a></li>
+                <li><a class="partner-link" href="#">behance</a></li>
               </ul>
             </div>
           </div>
@@ -282,10 +271,12 @@
       <footer id="footer" style="background-color: #f6f6f6">
         <div class="container-wrap">
           <ul>
-            <li><a>&copy; 2022 Theme by psdfreebies.com</a></li>
-            <li><a>Privacy</a></li>
-            <li><a>Terms of Use</a></li>
-            <li><a>Site map</a></li>
+            <li>
+              <p class="footer-link">&copy; 2022 <a class="footer-link" href="#">Theme by psdfreebies.com</a></p>
+            </li>
+            <li><a class="footer-link" href="#">Privacy</a></li>
+            <li><a class="footer-link" href="#">Terms of Use</a></li>
+            <li><a class="footer-link" href="#">Site map</a></li>
           </ul>
         </div>
       </footer>

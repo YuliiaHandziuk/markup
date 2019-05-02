@@ -16,6 +16,7 @@ $(function(){
 
 $(".nav-opener").click(function() {
 	$(".nav-slide").slideToggle(400);
+	$(".icon").toggleClass('animation-btn');
   });
   
   $(window).resize(function() {
@@ -45,6 +46,10 @@ jQuery(document).ready(function($) {
 
 		var selectTab = $(this).find('a').attr('href');
 		$(selectTab).fadeIn();
+
+		$(".tabset a").click(function(event){
+			event.preventDefault();
+		});
 	});
 });
 

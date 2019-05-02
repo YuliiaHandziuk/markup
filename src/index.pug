@@ -4,17 +4,17 @@ block content
 	#content
 		#home.visual-block(style="background-image: url(images/header_bgrd.jpg)")
 			.container-wrap
-				.visual-block__title
+				.visual-block--content
 					em.title We are best and creative agency
 					h1 We turn creative ideas into your business.
 					p Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.
 					.visual-block__buttons
 						a(href="#").btn-pink.btn Our Story
 						a(href="#").btn-violet.btn Read More
-					img(src="images/photo_1.png" alt="person")
+				img(src="images/photo_1.png" alt="person").person-image
 		#about.section__about-us(style="background-image: url(images/world_map_bgrd.jpg)")
 			.container-wrap
-				.section__about-us--block
+				.section__about-us--content
 					em.title Dream Big Inspire the World
 					h2 We turn creative ideas into your business.
 					nav.nav
@@ -28,218 +28,215 @@ block content
 							li
 								a(href="#") Branding
 					.text-block
-						p Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.Lorem ipsum dolor sit am et, consec tetur adipi scing elit. 
+						p Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.Lorem ipsum dolor sit am et, consec tetur adipi scing elit.
 						a(href="#").btn-pink.btn__read_more.btn Read More
-					img(src="images/watch.png", alt="watch")
+				img(src="images/watch.png", alt="watch").watch-image
 		#features.section__features(style="background-color: #4b2d7f")
 			.container-wrap
 				.section__features--block
-					img(src="images/headphone.svg", alt="megaphone")
-					span.count 500+
-					p Successfully 
+					.icon-megaphone
+					.count 500+
+					b.title Successfully
+						br
 						span completed projects
-					.text-block
-						p Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.
+					p Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.
 				.section__features--block
-					img(src="images/headphone.svg", alt="megaphone")
-					span.count 254+
-					p Highly specialised
+					.icon-megaphone
+					.count 254+
+					b.title Highly specialised
+						br
 						span employees
-					.text-block
-						p Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.
+					p Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.
 				.section__features--block
-					img(src="images/headphone.svg", alt="megaphone")
-					span.count 45+
-					p Awards
+					.icon-megaphone
+					.count 45+
+					b.title Awards
+						br
 						span  around the world
-					.text-block
-						p Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.
+					p Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.
 		.section__suggest(style="background-image: url(images/monitor_bgrd.jpg)")
 			.container-wrap
-				.title Let's Grow Together
+				em.title Let's Grow Together
 				h2 We turn creative ideas into your business.
-				.text-block 
-					p Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit. 
-					a(href="#").btn-pink.btn__read_more.btn Read More
-		#product.section__products(style="background-color: #ffffff")
+				p Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit.
+				a(href="#").btn-pink.btn__read_more.btn Read More
+		#product.section__products
 			.container-wrap
-				.section__products--block
+				.section__products--content
 					em.title We are best and creative agency
 					h2 We turn creative ideas into your business.
-					.text-block
-						p Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.
+					p Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.
 					.container-products
 						.product-block
-							img(src="images/message.png", alt="message")
+							img(src="images/message.png", alt="message").icon
 							span.title-text Graphic Design
-							.text-block
-								p  Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.
+							p Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.
 							a(href="#").btn-pink.btn__read_more.btn Read More
 						.product-block
-							img(src="images/megaphone.png", alt="megaphone")
+							img(src="images/megaphone.png", alt="megaphone").icon
 							span.title-text Graphic Design
-							.text-block
-								p Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.
+							p Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.
 							a(href="#").btn-pink.btn__read_more.btn Read More
 				.section__products--video
-					img(src="images/video-photo.jpg", alt="video_title").video-cover
-					a(href="#").btn__video 
-						img(src="images/video-btn.svg", alt="video-button")
+					.video-box
+						img(src="images/video-photo.jpg", alt="video_title").video-cover
+						a(href="#").btn__video
+							.icon-video-btn
 		#reviews.section__reviews(style="background-color: #f1f1f1")
 			.container-wrap
-				.section__reviews--title
+				.section__reviews--heading
 					h2 Our Recent Work
 					p Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds.Lorem ipsum dolor sit am et, consec tetur adipi scing elit. 
 				.section__reviews--tabs
 					ul.tabset
 						li
-							a(href="#tab1",  onclick="return false") Web design
+							a(href="#tab1") Web design
 						li
-							a(href="#tab2", onclick="return false") Mobile App
+							a(href="#tab2") Mobile App
 						li
-							a(href="#tab3", onclick="return false") Branding
+							a(href="#tab3") Branding
 						li
-							a(href="#tab4", onclick="return false") Branding
+							a(href="#tab4") Branding
 					.tab-contentainer
 						#tab1.tab-content
-								.image-block
-									a(href="#") 
-										img(src="images/photo_1.jpg" alt="photo-product")  
-								.image-block
-									a(href="#") 
-										img(src="images/photo_2.jpg" alt="photo-product")
-								.image-block
-									a(href="#") 
-										img(src="images/photo_3.jpg" alt="photo-product")
-								.image-block
-									a(href="#") 
-										img(src="images/photo_4.jpg" alt="photo-product")
-								.image-block
-									a(href="#") 
-										img(src="images/photo_5.jpg" alt="photo-product")
-								.image-block
-									a(href="#") 
-										img(src="images/photo_6.jpg" alt="photo-product")
-								.image-block
-									a(href="#") 
-										img(src="images/photo_7.jpg" alt="photo-product")
-								.image-block
-									a(href="#") 
-										img(src="images/photo_8.jpg" alt="photo-product")
-								.image-block
-									a(href="#") 
-										img(src="images/photo_9.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_1.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_2.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_3.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_4.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_5.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_6.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_7.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_8.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_9.jpg" alt="photo-product")
 						#tab2.tab-content
-								.image-block
-									a(href="#") 
-										img(src="images/photo_9.jpg" alt="photo-product")
-								.image-block
-									a(href="#") 
-										img(src="images/photo_8.jpg" alt="photo-product")
-								.image-block
-									a(href="#") 
-										img(src="images/photo_7.jpg" alt="photo-product")
-								.image-block
-									a(href="#") 
-										img(src="images/photo_6.jpg" alt="photo-product")
-								.image-block
-									a(href="#") 
-										img(src="images/photo_5.jpg" alt="photo-product")
-								.image-block
-									a(href="#") 
-										img(src="images/photo_4.jpg" alt="photo-product")
-								.image-block
-									a(href="#") 
-										img(src="images/photo_3.jpg" alt="photo-product")
-								.image-block
-									a(href="#") 
-										img(src="images/photo_2.jpg" alt="photo-product")
-								.image-block
-									a(href="#") 
-										img(src="images/photo_1.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_9.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_8.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_7.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_6.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_5.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_4.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_3.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_2.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_1.jpg" alt="photo-product")
 						#tab3.tab-content
-								.image-block
-									a(href="#") 
-										img(src="images/photo_1.jpg" alt="photo-product")
-								.image-block
-									a(href="#") 
-										img(src="images/photo_2.jpg" alt="photo-product")
-								.image-block
-									a(href="#") 
-										img(src="images/photo_3.jpg" alt="photo-product")
-								.image-block
-									a(href="#") 
-										img(src="images/photo_4.jpg" alt="photo-product")
-								.image-block
-									a(href="#") 
-										img(src="images/photo_5.jpg" alt="photo-product")
-								.image-block
-									a(href="#") 
-										img(src="images/photo_6.jpg" alt="photo-product")
-								.image-block
-									a(href="#") 
-										img(src="images/photo_7.jpg" alt="photo-product")
-								.image-block
-									a(href="#") 
-										img(src="images/photo_8.jpg" alt="photo-product")
-								.image-block
-									a(href="#") 
-										img(src="images/photo_9.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_1.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_2.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_3.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_4.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_5.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_6.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_7.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_8.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_9.jpg" alt="photo-product")
 						#tab4.tab-content
-								.image-block
-									a(href="#") 
-										img(src="images/photo_9.jpg" alt="photo-product")
-								.image-block
-									a(href="#") 
-										img(src="images/photo_8.jpg" alt="photo-product")
-								.image-block
-									a(href="#") 
-										img(src="images/photo_7.jpg" alt="photo-product")
-								.image-block
-									a(href="#") 
-										img(src="images/photo_6.jpg" alt="photo-product")
-								.image-block
-									a(href="#") 
-										img(src="images/photo_5.jpg" alt="photo-product")
-								.image-block
-									a(href="#") 
-										img(src="images/photo_4.jpg" alt="photo-product")
-								.image-block
-									a(href="#") 
-										img(src="images/photo_3.jpg" alt="photo-product")
-								.image-block
-									a(href="#") 
-										img(src="images/photo_2.jpg" alt="photo-product")
-								.image-block
-									a(href="#") 
-										img(src="images/photo_1.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_9.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_8.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_7.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_6.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_5.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_4.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_3.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_2.jpg" alt="photo-product")
+							.image-block
+								a(href="#")
+									img(src="images/photo_1.jpg" alt="photo-product")
 				.section__reviews--button
 					a(href="#").btn-pink.btn__read_more.btn Read More
 		#faq.section__partners(style="background-color: #4b2d7f")
 			.container-wrap
 				.container-partners
-					.partner-block 
+					.partner-block
 						a(href="#")
 							img(src="images/cisco.png" alt="cisco-logo")
-					.partner-block 
+					.partner-block
 						a(href="#")
 							img(src="images/adidas.png" alt="partner-logo")
-					.partner-block 
+					.partner-block
 						a(href="#")
 							img(src="images/lenovo.png" alt="partner-logo")
-					.partner-block 
+					.partner-block
 						a(href="#")
 							img(src="images/disney.png" alt="partner-logo")
-					.partner-block 
+					.partner-block
 						a(href="#")
 							img(src="images/amazon.png" alt="partner-logo")
-					.partner-block 
+					.partner-block
 						a(href="#")
 							img(src="images/puma.png" alt="partner-logo")
-					.partner-block 
+					.partner-block
 						a(href="#")
 							img(src="images/apple.png" alt="partner-logo")
-					.partner-block 
+					.partner-block
 						a(href="#")
 							img(src="images/mini.png" alt="partner-logo")
 		.section__quote(style="background-image: url(images/quote-bg.jpg)")
@@ -247,17 +244,16 @@ block content
 				.section__quote--title
 					em.title Our Happy Client
 					h2 Testimonials
-				blockquote(cite="#") 
+				blockquote(cite="#")
 					q Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit.
-				cite Mr. John Doe
+					cite Mr. John Doe
 				img(src="images/client.png" alt="client").client-photo
 		#contact.section__callback(style="background-image: url(images/callback_bg.jpg)")
 			.container-wrap
 				.section__callback--title
 					h2 Need Help?
 					h4 Don't Forget to Contact With Us
-					.text-block
-						p Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus.
+					p Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus lorem ipsum ese terds. Lorem ipsum dolor sit am et, consec tetur adipi scing elit. Sed sodales enim ut rhoncus.
 				.section__callback--form
 					input(type="text", placeholder="Name")
 					input(type="email", placeholder="Email")
@@ -266,15 +262,15 @@ block content
 			.container-wrap
 				ul
 					li
-						a(href="#") facebook
+						a(href="#").partner-link facebook
 					li
-						a(href="#") twitter
+						a(href="#").partner-link twitter
 					li
-						a(href="#") linkedin
+						a(href="#").partner-link linkedin
 					li
-						a(href="#") instagram
+						a(href="#").partner-link instagram
 					li
-						a(href="#") behance
+						a(href="#").partner-link behance
 		.section__navigation(style="background-image: url(images/world_map_bgrd.jpg)")
 			.container-wrap
 				.section__navigation--sitemap 
@@ -343,10 +339,3 @@ block content
 						.photo-block
 							a(href="#")
 								img(src="images/image_4.png" alt="gallery-photo")
-							
-
-					
-
-
-
-

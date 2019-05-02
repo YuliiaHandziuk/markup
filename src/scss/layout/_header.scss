@@ -6,183 +6,197 @@
     z-index: 100;
     padding: 34px 0 0;
     margin: 0 auto;
+    transition: all 300ms linear;
 
     .container-wrap {
-        max-width: 1319px;
-        padding: 0;
+        max-width: 1349px;
         display: flex;
         justify-content: space-between;
-
-        @include media ('<widescreen') {
-            max-width: 1024px;
-        }
-
-        @include media ('<desktop') {
-            max-width: 768px;
-        }
-
-        .logo {
-            display: inline-block;
-            padding: 2px 0 0 4px;
-
-            @include media ('<tablet') {
-                padding-left: 20px;
-            }
-
-            @include media ('<phone') {
-                padding-left: 20px;
-            }
-
-            img {
-
-                @include media ('<desktop') {
-                    max-width: 65%;
-                }
-
-                @include media ('<tablet') {
-                    max-width: 80%;
-                }
-
-                @include media ('<phone') {
-                    max-width: 100%;
-                }
-            }    
-        }
-
-        .nav-holder {
-            @include media ('<tablet') {
-                width: 100%;
-            }
-        }
-        
-        .nav-slide {
-            padding: 0px 25px 0 0;  
-
-            @include media ('<desktop') {
-                padding: 0;
-            }
-
-            @include media ('<tablet') {
-                padding: 0;
-                display: none; 
-            }
-            
-
-            li {
-                display: inline-block;
-                margin: 0 0 0 25px;
-
-                @include media ('<desktop') {
-                    padding: 0;
-                    margin: 0 0 0 12px;
-                }
-
-                @include media ('<tablet') {
-                    display:block;
-                    width:100%; 
-                    margin:0;
-                    background-color: rgba($black, 0.7);
-                    border-bottom: thin solid rgba($white, 0.3);
-                    text-align: center;
-                
-                    &:hover {
-                        transition-duration: 0.5s;
-                    }
-                }
-        
-                a {
-                    color: $white;
-                    letter-spacing: 0.3px;
-                    line-height: 5;
-
-                    &:hover {
-                        color: $pink;
-                    }
-
-                    @include media ('<desktop') {
-                        line-height: 3.5;
-                    }
-
-                    @include media ('<tablet') {
-                        line-height: 3.2;
-                    }
-                }
-            }
-        }
+        align-items: baseline;
     }
-}
 
+    .logo {
+        padding: 2px 0 0 4px;
 
-.nav-scroll {
-    padding: 0;
-    background-color: rgba($black, 0.7);
-
-    .container-wrap .logo {
-        padding: 14px 0 0;
-
-        @include media ('<desktop') {
-            padding: 8px 0 12px;
+        @include media ('<phone') {
+            max-width: 57%;
         }
     }
 
-    ul li {
-        padding-top: 8px;
+    .nav-slide {
+        padding: 0px 25px 0;
 
         @include media ('<desktop') {
             padding: 0;
-    
+            display: none;
         }
     }
 
-    .nav-opener {
-        top: 14px;
-    } 
+    #menu {
+
+        @include media ('<tablet') {
+            margin: 100px 0 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            margin: 100px 0 0;
+            width: 100%;
+        }
+    }
+
+    #menu li {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 0 0 10px;
+
+        @include media ('<desktop') {
+            padding: 0;
+            margin: 0 0 0 12px;
+        }
+
+        @include media ('<tablet') {
+            margin: 0;
+            background-color: rgba($black, 0.7);
+            border-bottom: thin solid rgba($white, 0.3);
+            text-align: center;
+            padding: 0;
+
+            &:hover {
+                transition-duration: 0.5s;
+            }
+        }
+    }
+
+    .nav-link {
+        color: $white;
+        letter-spacing: 0.3px;
+        line-height: 4.5;
+        width: 100%;
+
+        &:hover {
+            color: $pink;
+        }
+
+        @include media ('<tablet') {
+            padding: 3% 45%;
+        }
+    }
 }
 
 .nav-opener {
     display: none;
-    cursor: pointer;
+    position: absolute;
     height: 26px;
     width: 26px;
-    position: absolute;
     right: 20px;
-    top: 50px;
+    transition: all 300ms linear;
+
+    @include media ('<tablet') {
+        top: 60px;
+    }
 
     .icon {
         position: absolute;
         height: 3px;
         width: 30px;
-        top: 10px;
+        right: 20px;
         background-color: $pink;
+        transform-origin: left center;
+        transition: 200ms;
 
-        &:before {
-            position: absolute;
-            width: 30px;
-            height: 3px;
-            background-color: $pink;
-            content: "";
+        &:nth-child(1) {
             top: -10px;
+            
         }
 
-        &:after {
-            position: absolute;
-            width: 30px;
-            height: 3px;
-            background-color: $pink;
-            content: "";
+        &:nth-child(2) {
+            top: 0px;
+        }
+
+        &:nth-child(3) {
             top: 10px;
+        }
+    }
+
+    .animation-btn {
+
+        &:nth-child(1) {
+            transform: rotate(45deg);
+        }
+
+        &:nth-child(2) {
+            width: 0%;
+            opacity: 0;
+        }
+
+        &:nth-child(3) {
+            transform: rotate(-45deg);
         }
     }
 
     @include media ('<tablet') {
         display: block;
-        top: 40px;
     }
 }
 
-  
+.nav-scroll {
+    padding: 0;
+    background-color: rgba($black, 0.7);
+    transition: all 300ms linear;
 
-  
-  
-  
-  
+    @include media ('<tablet') {
+        padding: 0 0 10px;
+    }
+
+    .logo {
+        padding: 10px 0 0;
+
+        @include media ('<desktop') {
+            max-width: 22%;
+        }
+
+        @include media ('<tablet') {
+            max-width: 40%;
+        }
+    }
+
+    .nav-opener {
+    
+        @include media ('<tablet') {
+            top: 40px;
+        }
+
+        @include media ('<phone') {
+            top: 30px;
+        }
+         
+        @include media ('<xs-phone') {
+            top: 30px;
+        }
+    }
+
+    #menu {
+        @include media ('<tablet') {
+            margin: 70px 0 0;
+        }
+
+        @include media ('<phone') {
+            margin: 67px 0 0;
+        }
+
+        @include media ('<xs-phone') {
+            margin: 56px 0 0;
+        }
+    }
+
+    .nav-link {
+        padding: 0; 
+
+        @include media ('<tablet') {
+            padding: 3% 45%;
+        }
+    }
+}

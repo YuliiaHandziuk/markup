@@ -3,26 +3,24 @@ header#header
 		.logo
 			a(href="#")
 				img(src="images/logo.png", alt=""+siteTitle+"")
-				//- img(src="images/BlueRex.png" alt="logo-name")
-		.nav-holder
+		nav.nav-holder
 			a(href="#", onclick="return false").nav-opener
+				i.icon
+				i.icon
 				i.icon 
 			.nav-slide
-				ul.menu
+				ul#menu
 					li
-						a(href="#home") Home
+						a(href="#home").nav-link Home
 					li
-						a(href="#about") About
+						a(href="#about").nav-link About
 					li
-						a(href="#features") Features
+						a(href="#features").nav-link Features
 					li
-						a(href="#product") Product
+						a(href="#product").nav-link Product
 					li
-						a(href="#reviews") Reviews
+						a(href="#reviews").nav-link Reviews
 					li
-						a(href="#faq") Faq  
+						a(href="#faq").nav-link Faq
 					li
-						a(href="#contact") Contact
-				
-
-	
+						a(href="#contact").nav-link Contact
